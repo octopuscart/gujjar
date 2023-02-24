@@ -47,7 +47,7 @@
 
                 <div class="page-header-bottom" data-uk-sticky>
                     <div class="page-header-bottom__left">
-                        <div class="logo"><a class="logo__link" href="index.html"><img class="logo__img" src="<?php echo base_url(); ?>assets/img/logo.png" alt=""></a></div>
+                        <div class="logo"><a class="logo__link" href="<?php echo site_url("/");?>"><img class="logo__img" src="<?php echo base_url(); ?>assets/img/logo.png" alt=""></a></div>
                         <div class="support"> <a class="support__link" href="tel:236-799-5500">
                                 <div class="support__icon"><i class="fas fa-headset" style="color:#fd8a37;"></i></div>
                                 <div class="support__desc">
