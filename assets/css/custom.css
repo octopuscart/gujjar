@@ -1,0 +1,31 @@
+
+img.logo__img {
+    height: 60px;
+}
+
+svg.svg-inline--fa.fa-headset.fa-w-16 path {
+    fill: #000;
+}
+
+.page-header-bottom__left svg.svg-inline--fa.fa-headset.fa-w-16 path {
+    fill: #fd8a37;
+}
+
+.page-header-bottom__right .uk-navbar-nav > li > a {
+    padding: 0 15px;
+    padding: 0  2.700vw;
+    color: #222222;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+@media only screen and (min-width: 1200px) {
+    .footermenulinks{
+        padding-left: 93px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
