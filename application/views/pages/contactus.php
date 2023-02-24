@@ -91,11 +91,11 @@ $this->load->view('layout/header');
             <div class="section-cta__img"><img src="<?php echo base_url(); ?>assets/imgimg-cta.png" alt=""></div>
             <div class="section-cta__title"> <span>We Help Industry To Utilize The<br> Heavy Equipment Work Better</span></div>
             <div class="section-cta__support">
-              <div class="support"> <a class="support__link" href="tel:236-799-5500">
+              <div class="support"> <a class="support__link" href="tel:+(852) 9187 7140">
                   <div class="support__icon"><i class="fas fa-headset"></i></div>
                   <div class="support__desc">
                     <div class="support__label">Get Quick Support</div>
-                    <div class="support__phone">236-799-5500</div>
+                    <div class="support__phone">+(852) 9187 7140</div>
                   </div>
                 </a></div>
             </div>
