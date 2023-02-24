@@ -62,8 +62,8 @@ class Content extends CI_Controller {
         $this->load->view('pages/contactus');
     }
 
-    public function aboutus() {
-        $this->load->view('pages/aboutus');
+    public function equipments() {
+        $this->load->view('pages/products');
     }
 
     public function error404() {

@@ -80,7 +80,7 @@ $menulinks = array(
     <div id="offcanvas" data-uk-offcanvas="overlay: true">
         <div class="uk-offcanvas-bar"><button class="uk-offcanvas-close" type="button" data-uk-close=""></button>
             <div class="uk-margin">
-                <div class="logo"><a class="logo__link" href="index.html"><img class="logo__img" src="<?php echo base_url(); ?>assets/img/logo-white.png" alt="logo"></a></div>
+                <div class="logo"><a class="logo__link" href="/"><img class="logo__img" src="<?php echo base_url(); ?>assets/img/logo-white.png" alt="logo"></a></div>
             </div>
             <div class="uk-margin">
                 <ul class="uk-nav-default uk-nav-parent-icon" data-uk-nav>

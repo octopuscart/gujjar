@@ -1,5 +1,11 @@
 <?php
 $this->load->view('layout/header');
+$products = array(
+    "Skid Steer Loader" => "thumb_134.jpg",
+    "Dump Trucks" => "thumb_2.png",
+    "Bulldozer" => "thumb_3.png",
+  
+);
 ?>
 <main class="page-main">
     <div class="section-slideshow">
@@ -37,9 +43,11 @@ $this->load->view('layout/header');
                             <div>
                                 <div class="uk-inline uk-width-1-1"><span class="uk-form-icon"><img src="<?php echo base_url(); ?>assets/img/icons/truck.svg" alt="truck" data-uk-svg></span><select class="uk-select uk-form-large" name="category">
                                         <option value="">Select Category</option>
-                                        <option value="">Category 1 </option>
-                                        <option value="">Category 2</option>
-                                        <option value="">Category 3</option>
+                                        <?php
+                                        foreach ($products as $key => $value) {
+                                            echo "<option value='$key'>$key</option>";
+                                        }
+                                        ?>
                                     </select></div>
                             </div>
                             <div>
@@ -69,74 +77,29 @@ $this->load->view('layout/header');
             </div>
             <div class="section-content">
                 <div class="uk-grid uk-grid-medium uk-child-width-1-3@m uk-child-width-1-2@s" data-uk-grid>
-                    <div>
-                        <div class="category-item"> <a class="category-item__link uk-inline-clip uk-transition-toggle" href="page-categories-1.html" tabindex="0">
-                                <div class="category-item__media"><img src="<?php echo base_url(); ?>assets/img/category-1.jpg" alt="Excavators" />
-                                    <div class="uk-transition-fade">
-                                        <div class="uk-overlay-primary uk-position-cover"></div>
-                                        <div class="uk-position-center"><span data-uk-icon="icon: plus; ratio: 2"></span></div>
+
+                    <?php
+                    foreach ($products as $key => $value) {
+                        ?>
+                        <div>
+                            <div class="category-item"> 
+                                <a class="category-item__link uk-inline-clip uk-transition-toggle" href="#" tabindex="0">
+                                    <div class="category-item__media"><img src="<?php echo base_url(); ?>assets/products/<?php echo $value;?>" alt="Excavators" />
+                                        <div class="uk-transition-fade">
+                                            <div class="uk-overlay-primary uk-position-cover"></div>
+                                            <div class="uk-position-center"><span data-uk-icon="icon: plus; ratio: 2"></span></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="category-item__title"> <span>Excavators</span></div>
-                            </a></div>
-                    </div>
-                    <div>
-                        <div class="category-item"> <a class="category-item__link uk-inline-clip uk-transition-toggle" href="page-categories-1.html" tabindex="0">
-                                <div class="category-item__media"><img src="<?php echo base_url(); ?>assets/img/category-2.jpg" alt="Scissor Lift" />
-                                    <div class="uk-transition-fade">
-                                        <div class="uk-overlay-primary uk-position-cover"></div>
-                                        <div class="uk-position-center"><span data-uk-icon="icon: plus; ratio: 2"></span></div>
-                                    </div>
-                                </div>
-                                <div class="category-item__title"> <span>Scissor Lift</span></div>
-                            </a></div>
-                    </div>
-                    <div>
-                        <div class="category-item"> <a class="category-item__link uk-inline-clip uk-transition-toggle" href="page-categories-1.html" tabindex="0">
-                                <div class="category-item__media"><img src="<?php echo base_url(); ?>assets/img/category-3.jpg" alt="forklift / Boomlift" />
-                                    <div class="uk-transition-fade">
-                                        <div class="uk-overlay-primary uk-position-cover"></div>
-                                        <div class="uk-position-center"><span data-uk-icon="icon: plus; ratio: 2"></span></div>
-                                    </div>
-                                </div>
-                                <div class="category-item__title"> <span>forklift / Boomlift</span></div>
-                            </a></div>
-                    </div>
-                    <div>
-                        <div class="category-item"> <a class="category-item__link uk-inline-clip uk-transition-toggle" href="page-categories-1.html" tabindex="0">
-                                <div class="category-item__media"><img src="<?php echo base_url(); ?>assets/img/category-4.jpg" alt="Compaction Roller" />
-                                    <div class="uk-transition-fade">
-                                        <div class="uk-overlay-primary uk-position-cover"></div>
-                                        <div class="uk-position-center"><span data-uk-icon="icon: plus; ratio: 2"></span></div>
-                                    </div>
-                                </div>
-                                <div class="category-item__title"> <span>Compaction Roller</span></div>
-                            </a></div>
-                    </div>
-                    <div>
-                        <div class="category-item"> <a class="category-item__link uk-inline-clip uk-transition-toggle" href="page-categories-1.html" tabindex="0">
-                                <div class="category-item__media"><img src="<?php echo base_url(); ?>assets/img/category-5.jpg" alt="Compaction Roller" />
-                                    <div class="uk-transition-fade">
-                                        <div class="uk-overlay-primary uk-position-cover"></div>
-                                        <div class="uk-position-center"><span data-uk-icon="icon: plus; ratio: 2"></span></div>
-                                    </div>
-                                </div>
-                                <div class="category-item__title"> <span>Compaction Roller</span></div>
-                            </a></div>
-                    </div>
-                    <div>
-                        <div class="category-item"> <a class="category-item__link uk-inline-clip uk-transition-toggle" href="page-categories-1.html" tabindex="0">
-                                <div class="category-item__media"><img src="<?php echo base_url(); ?>assets/img/category-6.jpg" alt="all types containers" />
-                                    <div class="uk-transition-fade">
-                                        <div class="uk-overlay-primary uk-position-cover"></div>
-                                        <div class="uk-position-center"><span data-uk-icon="icon: plus; ratio: 2"></span></div>
-                                    </div>
-                                </div>
-                                <div class="category-item__title"> <span>all types containers</span></div>
-                            </a></div>
-                    </div>
+                                    <div class="category-item__title"> <span><?php echo $key;?></span></div>
+                                </a>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                    ?>
+                   
                 </div>
-                <div class="uk-margin-large-top uk-text-center"><a class="uk-button uk-button-default uk-button-large" href="page-categories-1.html"><span>More categories</span><img src="<?php echo base_url(); ?>assets/img/icons/arrow.svg" alt="arrow" data-uk-svg></a></div>
+                <div class="uk-margin-large-top uk-text-center"><a class="uk-button uk-button-default uk-button-large" href="<?php echo site_url("equipments");?>"><span>More categories</span><img src="<?php echo base_url(); ?>assets/img/icons/arrow.svg" alt="arrow" data-uk-svg></a></div>
             </div>
         </div>
     </div>
@@ -278,7 +241,7 @@ $this->load->view('layout/header');
                 <div>
                     <div class="blocks-icon uk-grid uk-grid-medium uk-child-width-1-2@s" data-uk-grid>
                         <div>
-                            <div class="block-icon"><a class="block-icon__link" href="page-categories-2.html">
+                            <div class="block-icon"><a class="block-icon__link" href="#">
                                     <div class="block-icon__box">
                                         <div class="block-icon__ico"><img src="<?php echo base_url(); ?>assets/img/icons/ico-why-choose-1.svg" alt="block-icon"></div>
                                         <div class="block-icon__title">Buy Quality<br> Equipment</div>
@@ -286,7 +249,7 @@ $this->load->view('layout/header');
                                 </a></div>
                         </div>
                         <div>
-                            <div class="block-icon"><a class="block-icon__link" href="page-categories-2.html">
+                            <div class="block-icon"><a class="block-icon__link" href="#">
                                     <div class="block-icon__box">
                                         <div class="block-icon__ico"><img src="<?php echo base_url(); ?>assets/img/icons/ico-why-choose-2.svg" alt="block-icon"></div>
                                         <div class="block-icon__title">Reliable &<br> Fast Service</div>
@@ -294,7 +257,7 @@ $this->load->view('layout/header');
                                 </a></div>
                         </div>
                         <div>
-                            <div class="block-icon"><a class="block-icon__link" href="page-categories-2.html">
+                            <div class="block-icon"><a class="block-icon__link" href="#">
                                     <div class="block-icon__box">
                                         <div class="block-icon__ico"><img src="<?php echo base_url(); ?>assets/img/icons/ico-why-choose-3.svg" alt="block-icon"></div>
                                         <div class="block-icon__title">Best Prices<br> Gurantee</div>
@@ -302,7 +265,7 @@ $this->load->view('layout/header');
                                 </a></div>
                         </div>
                         <div>
-                            <div class="block-icon"><a class="block-icon__link" href="page-categories-2.html">
+                            <div class="block-icon"><a class="block-icon__link" href="#">
                                     <div class="block-icon__box">
                                         <div class="block-icon__ico"><img src="<?php echo base_url(); ?>assets/img/icons/ico-why-choose-4.svg" alt="block-icon"></div>
                                         <div class="block-icon__title">Buy With Full<br> Security</div>
@@ -338,7 +301,7 @@ $this->load->view('layout/header');
                 <div class="equipment-box__desc">
                     <div class="equipment-box__title">Worried About The Idling Equipment Parking At Yard?</div>
                     <div class="equipment-box__text">Start listing your equipment(s) with us today!</div>
-                    <div class="equipment-box__btn"><a class="uk-button uk-button-large" href="page-blog-list.html"><span>Learn more</span><img src="<?php echo base_url(); ?>assets/img/icons/arrow.svg" alt="arrow" data-uk-svg></a></div>
+                    <div class="equipment-box__btn"><a class="uk-button uk-button-large" href="#"><span>Learn more</span><img src="<?php echo base_url(); ?>assets/img/icons/arrow.svg" alt="arrow" data-uk-svg></a></div>
                 </div>
             </div>
         </div>
