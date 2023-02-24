@@ -11,7 +11,7 @@ $products = array(
     "Fork Lift Trucks" => "thumb_6.png",
 );
 ?>
-?>
+
 
 <main class="page-main">
     <div class="page-head">
