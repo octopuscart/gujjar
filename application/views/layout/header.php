@@ -29,7 +29,7 @@
         <!-- web-font loader-->
         <?php
         $menulinks = array(
-            "Home" => site_url("home"),
+            "Home" => site_url("/"),
             "Equipments" => site_url("equipments"),
             "About" => site_url("about"),
             "Career" => site_url("career"),

@@ -1,6 +1,6 @@
 <?php
 $menulinks = array(
-    "Home" => site_url("home"),
+    "Home" => site_url("/"),
     "Equipments" => site_url("equipments"),
     "About" => site_url("about"),
     "Career" => site_url("career"),
@@ -73,8 +73,8 @@ $menulinks = array(
             </div>
         </div>
 
-        <div class="page-footer-bottom"><span>(c) <?php echo date("Y")?> Gujjar HK Trading. All Rights Reserved.</span>
-          
+        <div class="page-footer-bottom"><span>(c) <?php echo date("Y") ?> Gujjar HK Trading. All Rights Reserved.</span>
+
         </div><a class="totop-link" href="#top" data-uk-scroll><img src="<?php echo base_url(); ?>assets/img/icons/ico-totop.svg" alt="totop"><span>Go to top</span></a>
     </div>
     <div id="offcanvas" data-uk-offcanvas="overlay: true">
@@ -115,7 +115,7 @@ $menulinks = array(
             </div>
         </div>
     </div>
-    
+
 </footer>
 </div>
 <?php
