@@ -57,7 +57,7 @@ require("configdbconnect.php");
 foreach ($globleRoutes as $key => $value) {
     $route[$value["uri"]] = 'Content/pages/'.$value["uri"];
 }
-
+  $route["contact-us"] = 'Content/contactus';
 
 $route['translate_uri_dashes'] = FALSE;
 

@@ -13,9 +13,7 @@ $this->load->view('layout/header');
                     <div class="error-block">
                         <h1>Page not Found</h1>
               
-                        <div class="images mt20">
-                            <img src="<?php echo base_url(); ?>assets/theme/images/shape/error-page.png" alt="error page" class="img-fluid"/>
-                        </div>
+                       
                         <a href="<?php echo site_url("/");?>" class="btn-outline">Back to Home</a>
                     </div>
                 </div>
