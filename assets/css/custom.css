@@ -37,3 +37,11 @@ svg.svg-inline--fa.fa-headset.fa-w-16 path {
     background-position: center;
     background-size: cover;
 }
+
+
+@media (min-width: 960px) {
+    .customtemplate .uk-section-large {
+        padding-top: 56px;
+        padding-bottom: 30px;
+    }
+}

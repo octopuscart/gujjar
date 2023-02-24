@@ -2,7 +2,7 @@
 $this->load->view('layout/header');
 ?>
 
-<main class="page-main">
+<main class="page-main customtemplate">
     <div class="page-head">
         <div class="page-head__bg" style="background-image: url(<?php echo base_url(); ?>assets/img/bg/bg_categories.jpg)">
             <div class="page-head__content" data-uk-parallax="y: 0, 100">
