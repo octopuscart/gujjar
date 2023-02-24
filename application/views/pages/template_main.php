@@ -1,33 +1,33 @@
 <?php
 $this->load->view('layout/header');
 ?>
-<!-- Slider -->
-<!--KODE SAB BANNER WRAP START-->
-<div class="kode_sab_banner_wrap them_overlay ">
-    <!--CONTAINER START-->
-    <div class="container">
-        <div class="sab_banner_text">
-            <h2><?php echo $contentData["title"] ?></h2>
-            <ul class="breadcrumbs">
-                <li><a href="#"><i class="fa fa-home"></i></a></li>
-                <li><strong><?php echo $contentData["uri"] ?></strong></li>
-            </ul>
+
+<main class="page-main">
+    <div class="page-head">
+        <div class="page-head__bg" style="background-image: url(<?php echo base_url(); ?>assets/img/bg/bg_categories.jpg)">
+            <div class="page-head__content" data-uk-parallax="y: 0, 100">
+                <div class="uk-container">
+                    <div class="header-icons"><span></span><span></span><span></span></div>
+                    <div class="page-head__title"> <?php echo $contentData["title"] ?></div>
+                    <div class="page-head__breadcrumb">
+                        <ul class="uk-breadcrumb">
+                            <li><a href="<?php echo site_url("/")?>">Home</a></li>
+                            <li><span><?php echo $contentData["uri"] ?></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!--CONTAINER END-->
-</div>
-<!--KODE SAB BANNER WRAP END-->
 
-<!--KODE MOSQUES WRAP STRAT-->
-<div class="kode_mosques_wrap maincontenttemplate">
-    <!--CONTAINER STRAT-->
-    <div class="container">
-        <!--ROW STRAT-->
-        <div class="row">
+    <div class="page-content">
+        <div class="uk-section-large uk-container">
             <?php echo $contentData["content"] ?>
         </div>
     </div>
-</div>
+
+</main>
+
 
 
 <?php
